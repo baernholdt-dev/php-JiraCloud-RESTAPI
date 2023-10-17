@@ -26,7 +26,7 @@ class ProjectService extends \JiraCloud\JiraClient
         $ret = $this->exec($this->uri.'/search'.$this->toHttpQueryParameter($paramArray), null);
 
         $prjs = $this->json_mapper->mapArray(
-            json_decode($ret, false),
+            json_decode($ret, false)->values,
             new \ArrayObject(),
             Project::class
         );
