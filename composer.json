@@ -1,5 +1,5 @@
 {
-    "name": "lesstif/jira-cloud-restapi",
+    "name": "baernholdt-dev/jira-cloud-restapi",
     "description": "JIRA Cloud REST API",
     "type": "library",
     "keywords": ["jira", "rest", "jira-php", "jira-rest", "jira-cloud"],
