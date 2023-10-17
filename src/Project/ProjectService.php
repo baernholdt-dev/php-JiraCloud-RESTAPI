@@ -23,7 +23,7 @@ class ProjectService extends \JiraCloud\JiraClient
      */
     public function getAllProjects($paramArray = [])
     {
-        $ret = $this->exec($this->uri.$this->toHttpQueryParameter($paramArray), null);
+        $ret = $this->exec($this->uri.'/search'.$this->toHttpQueryParameter($paramArray), null);
 
         $prjs = $this->json_mapper->mapArray(
             json_decode($ret, false),
